@@ -8,7 +8,7 @@
 -spec dispatch() -> [webmachine_dispatcher:route()].
 dispatch() ->
     lists:flatten([
-        {[], webmachine_bug_resource, []}
+        {["test", '*'], test_resource, []}
     ]).
 
 web_config() ->
